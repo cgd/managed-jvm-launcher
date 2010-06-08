@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ivy-module version="2.0">
+    <info organisation="org.jax" module="managed-jvm-launcher" revision="1.0"/>
+    
+    <configurations>
+        <conf
+            name="compile"
+            description="dependencies needed to compile"/>
+        <conf
+            name="test"
+            extends="compile"
+            description="dependencies needed to test"/>
+    </configurations>
+
+    <publications>
+        <artifact name="managed-jvm-launcher" type="jar" ext="jar"/>
+    </publications>
+    
+    <dependencies>
+        <dependency
+            org="org.jax"
+            name="jax-util"
+            rev="latest.integration"/>
+    </dependencies>
+    
+</ivy-module>
